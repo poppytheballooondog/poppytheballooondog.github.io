@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            180deg,
+            #63c979,
+            #267b3e
+        );
+
+    color: white;
+
+}
+
+.app {
+
+    width: min(
+        700px,
+        92vw
+    );
+
+    padding: 35px;
+
+    text-align: center;
+
+    border-radius: 30px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.14
+        );
+
+    backdrop-filter:
+        blur(12px);
+
+    box-shadow:
+        0 20px 60px
+        rgba(
+            0,
+            0,
+            0,
+            0.25
+        );
+
+}
+
+.poppy {
+
+    font-size: 120px;
+
+    animation:
+        float 2.5s
+        ease-in-out
+        infinite;
+
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-12px);
+    }
+
+}
+
+h1 {
+
+    font-size: 52px;
+
+    margin:
+        5px 0 10px;
+
+}
+
+.status {
+
+    font-size: 20px;
+
+    min-height: 30px;
+
+}
+
+.conversation {
+
+    min-height: 180px;
+
+    margin:
+        20px 0;
+
+    padding: 25px;
+
+    border-radius: 22px;
+
+    background: white;
+
+    color: #222;
+
+    text-align: left;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    white-space: pre-wrap;
+
+}
+
+.controls {
+
+    display: flex;
+
+    gap: 12px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+}
+
+button {
+
+    border: 0;
+
+    border-radius: 18px;
+
+    padding:
+        17px 25px;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+button:disabled {
+
+    opacity: 0.4;
+
+    cursor: not-allowed;
+
+}
+
+#talk {
+
+    background: white;
+
+    color: #17622e;
+
+}
+
+#stop {
+
+    background: #222;
+
+    color: white;
+
+}
+
+.error {
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    background:
+        rgba(
+            120,
+            0,
+            0,
+            0.5
+        );
+
+    text-align: left;
+
+    white-space: pre-wrap;
+
+}
